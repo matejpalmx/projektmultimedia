@@ -1,4 +1,6 @@
-/* Google Font již načítá Montserrat */
+/* style.css */
+
+/* Google Font už načtená v HTML */
 
 :root {
   --primary-color: #2c3e50;
@@ -26,6 +28,39 @@ body {
   max-width: 1100px;
   margin: 0 auto;
   padding: 0 1.5rem;
+}
+.navbar {
+  position: sticky; /* nebo fixed kdybys chtěl úplně fixní */
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: var(--primary-color);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Intro */
+.intro {
+  background-color: var(--light-bg);
+  padding: 3rem 0;
+  border-bottom: 1px solid #ddd;
+}
+.intro h2 {
+  font-size: 1.75rem;
+  color: var(--primary-color);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.intro p, .intro ul {
+  max-width: 700px;
+  margin: 0.5rem auto;
+  font-size: 1rem;
+}
+.intro ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+}
+.intro ul li {
+  margin-bottom: 0.5rem;
 }
 
 /* Navbar */
